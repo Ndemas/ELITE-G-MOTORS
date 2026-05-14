@@ -20,7 +20,7 @@
     --white-40:rgba(255, 255, 255, 0.4);
     --white-50:rgba(255, 255, 255, 0.5);
     --white-60:rgba(255, 255, 255, 0.6);
-    --white-70:rgba(255, 255, 255, 0.7);
+    --white-70:rgba(255, 255, 255, 0.952);
     --white-90:rgba(255, 255, 255, 0.9);
     --shadow-black:rgba(0, 0, 0, 0.3);
     --blue-hover:rgba(32, 76, 153, 0.473);
@@ -562,11 +562,14 @@ a{text-decoration: none;}
 }
 
 .about-content h2{
-  font-size:clamp(28px, 4vw, 40px);
+  font-size:clamp(25px, 5vw, 35px);
   margin:20px 0;
   line-height:1.2;
 }
-
+.about-content h2{ color:var(--secondary-color);
+  line-height:1.8;
+  margin-bottom:20px;
+}
 .about-description{
   color:var(--white-70);
   line-height:1.8;
