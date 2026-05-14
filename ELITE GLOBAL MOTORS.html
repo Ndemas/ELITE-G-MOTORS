@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/Users/ADMIN/Desktop/index.html#contact -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELITE GLOBAL MOTORS</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0b0f1a;
+    color: white;
+}
+
+header {
+    background: linear-gradient(90deg, #0a3d62, #1e3c72);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    color: gold;
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    color: gold;
+}
+
+.btn {
+    background: gold;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.tabs button {
+    background: #1e3c72;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.car-card {
+    background: #111827;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.car-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.car-card h3 {
+    margin: 10px;
+}
+
+.car-card button {
+    background: gold;
+    border: none;
+    padding: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.details {
+    display: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.contact a {
+    display: block;
+    color: gold;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer {
+    background: #0a3d62;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    .hero h2 { font-size: 40px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>ELITE GLOBAL MOTORS</h1>
+<nav>
+<a href="file:///C:/Users/ADMIN/Desktop/index.html#">Home</a>
+<a href="file:///C:/Users/ADMIN/Desktop/index.html#products">Products</a>
+<a href="file:///C:/Users/ADMIN/Desktop/index.html#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Luxury Cars &amp; Motorbikes</h2>
+<p>Drive Excellence</p>
+<a href="file:///C:/Users/ADMIN/Desktop/index.html#products"><button class="btn">Explore Products</button></a>
+</section>
+
+<section id="products" class="section">
+<h2>Our Products</h2>
+
+<div class="tabs">
+<button onclick="showCategory(&#39;cars&#39;)">Cars</button>
+<button onclick="showCategory(&#39;bikes&#39;)">Motorbikes</button>
+</div>
+
+<div id="cars" class="cars" style="display: none;">
+<div class="car-card">
+<img src="./ELITE GLOBAL MOTORS_files/photo-1552519507-da3b142c6e3d">
+<h3>Land Cruiser</h3>
+<button onclick="toggleDetails(this)">View Details</button>
+<div class="details" style="display: block;">Price: $45,000<br>Engine: V8<br>Status: Available</div>
+</div>
+</div>
+
+<div id="bikes" class="cars" style="display: flex;">
+<div class="car-card">
+<img src="./ELITE GLOBAL MOTORS_files/photo-1518655048521-f130df041f66">
+<h3>Yamaha R6</h3>
+<button onclick="toggleDetails(this)">View Details</button>
+<div class="details" style="display: none;">Price: $12,000<br>Engine: 600cc<br>Status: Available</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="section contact">
+<h2>Contact Us</h2>
+<a href="tel:0768180408">📞 0768180408</a>
+<a href="mailto:anesiusreuben2@gmail.com">📧 anesiusreuben2@gmail.com</a>
+</section>
+
+<div class="footer">
+<p>© 2026 ELITE GLOBAL MOTORS</p>
+</div>
+
+<script>
+function showCategory(category) {
+    document.getElementById('cars').style.display = 'none';
+    document.getElementById('bikes').style.display = 'none';
+    document.getElementById(category).style.display = 'flex';
+}
+
+function toggleDetails(button) {
+    let details = button.nextElementSibling;
+    details.style.display = details.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+
+
+
+</body></html>
