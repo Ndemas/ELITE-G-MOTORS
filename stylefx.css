@@ -521,6 +521,7 @@ h4{
   margin:0 auto;
   align-items: center;
 }
+a{text-decoration: none;}
 
 .about-image{
   position:relative;
