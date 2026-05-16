@@ -1,10 +1,4 @@
-/* Premium Global Dark Theme Foundation */
-body {
-    background-color: #060b13;
-    color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-}
+
 
 .view-details {
     display: flex;
@@ -96,21 +90,6 @@ body {
     margin-bottom: 10px;
 }
 
-.badge-container {
-    display: flex;
-    gap: 6px;
-    margin-bottom: 4px;
-}
-
-.badge {
-    background-color: #18253d;
-    color: #8fa0bd;
-    font-size: 10px;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 3px;
-    border: 1px solid #253754;
-}
 
 .car-details h1 {
     font-size: 26px; 
